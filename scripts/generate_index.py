@@ -17,6 +17,7 @@ import sys
 from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_DIR = os.path.join(ROOT, "src")
 TODAY = date.today().isoformat()
 
 SKIP = {"index.yaml"}
@@ -61,10 +62,12 @@ def dump_yaml(path, data):
 # ─── 收集 ────────────────────────────────────────────────
 
 
-def collect_entries(subdir, fields):
-    """扫描子目录下的所有 .yaml 文件，提取指定字段"""
+def collect_entries(subdir, fields, src_subdir=None):
+    """扫描源目录下的所有 .yaml 文件，提取指定字段"""
+    if src_subdir is None:
+        src_subdir = subdir
     entries = []
-    pattern = os.path.join(ROOT, subdir, "*.yaml")
+    pattern = os.path.join(SRC_DIR, src_subdir, "*.yaml")
     for fpath in sorted(glob.glob(pattern)):
         basename = os.path.basename(fpath)
         if basename in SKIP:
@@ -101,14 +104,20 @@ HEADERS = {
         "# Xime 模型子索引\n"
         "# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑\n"
     ),
+    "models/ncnn": (
+        "# Xime NCNN 模型子索引\n"
+        "# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑\n"
+    ),
 }
 
 
-def generate_index(subdir, key, fields):
+def generate_index(subdir, key, fields, src_subdir=None):
     """生成合并后的索引文件"""
+    if src_subdir is None:
+        src_subdir = subdir
     index_path = os.path.join(ROOT, subdir, "index.yaml")
     existing = load_yaml(index_path) if os.path.exists(index_path) else {}
-    entries = collect_entries(subdir, fields)
+    entries = collect_entries(subdir, fields, src_subdir)
 
     index = {
         "index_version": existing.get("index_version", 1),
@@ -208,7 +217,7 @@ def main():
     check_only = "--check" in args
     validate_only = "--validate" in args
 
-    SUBDIRS = ("rimes", "plugins", "models")
+    SUBDIRS = ("rimes", "plugins", "models", "models/ncnn")
 
     # 暂存当前内容（用于 check 模式）
     snapshots = {}
@@ -223,12 +232,14 @@ def main():
     generate_index("rimes", "schemas", SCHEMA_FIELDS)
     generate_index("plugins", "plugins", PLUGIN_FIELDS)
     generate_index("models", "models", MODEL_FIELDS)
+    generate_index("models/ncnn", "models", MODEL_FIELDS, "models/ncnn")
 
     # 校验（生成后自动校验）
     print("Validating generated index files...")
     validate_index("rimes", "schemas")
     validate_index("plugins", "plugins")
     validate_model_index("models", "models")
+    validate_model_index("models/ncnn", "models")
 
     # check 模式：检测是否有变动
     if check_only:
@@ -255,6 +266,7 @@ def main():
     print("   - rimes/index.yaml")
     print("   - plugins/index.yaml")
     print("   - models/index.yaml")
+    print("   - models/ncnn/index.yaml")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,31 @@
+# Xime NCNN 模型子索引
+# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑
+index_version: 1
+updated_at: '2026-07-26'
+models:
+- id: sense-voice
+  name: SenseVoice 语音转文字
+  description: SenseVoice 专注于高精度多语言语音识别、情感辨识和音频事件检测。
+  category: asr
+  size: 219.59MB
+  type: remote
+  tags:
+  - 语音
+  - sherpa-ncnn
+  - ASR
+  appVersion: '>=2.6.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: asr_models/sense-voice
+    archive:
+      url: https://www.modelscope.cn/models/bikeand/asr-ncnn-from-sherpa/resolve/master/sherpa-ncnn-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09.tar.bz2
+      sha256: null
+      size: 219.59MB
+      sizeBytes: null
+    files:
+    - name: model.ncnn.param
+    - name: tokens.txt
+    - name: model.ncnn.bin
