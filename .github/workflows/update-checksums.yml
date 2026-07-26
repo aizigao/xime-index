@@ -8,6 +8,7 @@ on:
       - "src/plugins/*.yaml"
       - "src/models/*.yaml"
       - "src/models/ncnn/*.yaml"
+      - ".github/workflows/update-checksums.yml"
   workflow_dispatch: # 也支持手动触发
 
 jobs:
