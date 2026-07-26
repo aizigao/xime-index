@@ -30,10 +30,35 @@ jobs:
       - name: Install uv
         run: pip install uv
 
-      # ─── 1. 校验 sha256/size 完整性 ─────────────────
-      #     跳过 version 为 master/main 的分支引用
-      - name: Validate checksums completeness
-        run: uv run python scripts/ci-update.py --check
+      # ─── 1. 生成索引并校验结构 ──────────────────────
+      - name: Generate index files and validate structure
+        run: |
+          uv run python scripts/ci-update.py
+          python3 -c "
+          import yaml, sys
+
+          def validate(path, key):
+              with open(path) as f:
+                  data = yaml.safe_load(f)
+              assert data.get('index_version') == 1, f'{path}: index_version must be 1'
+              assert key in data, f'{path}: missing \"{key}\"'
+              items = data[key]
+              for entry in items:
+                  assert 'id' in entry
+                  assert 'name' in entry
+                  assert 'currentVersion' in entry
+                  assert 'versions' in entry
+                  for v in entry['versions']:
+                      assert 'version' in v
+                      assert 'date' in v
+              print(f'  ✓ {path}: {len(items)} entries')
+
+          validate('rimes/index.yaml', 'schemas')
+          validate('plugins/index.yaml', 'plugins')
+          validate('models/index.yaml', 'models')
+          validate('models/ncnn/index.yaml', 'models')
+          print('✅ All index files valid')
+          "
 
       # ─── 2. 校验主索引结构 ───────────────────────────
       - name: Validate main index.yaml
