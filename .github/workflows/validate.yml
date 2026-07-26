@@ -99,6 +99,7 @@ jobs:
           failures = check_urls('rimes/index.yaml', 'schemas')
           failures += check_urls('plugins/index.yaml', 'plugins')
           failures += check_urls('models/index.yaml', 'models', is_model=True)
+          failures += check_urls('models/ncnn/index.yaml', 'models', is_model=True)
 
           if failures:
               sys.exit(1)
