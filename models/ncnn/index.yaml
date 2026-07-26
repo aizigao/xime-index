@@ -1,5 +1,5 @@
 # Xime NCNN 模型子索引
-# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑
+# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
 updated_at: '2026-07-26'
 models:
@@ -22,9 +22,9 @@ models:
     storageDir: asr_models/sense-voice
     archive:
       url: https://www.modelscope.cn/models/bikeand/asr-ncnn-from-sherpa/resolve/master/sherpa-ncnn-sense-voice-zh-en-ja-ko-yue-int8-2025-09-09.tar.bz2
-      sha256: null
-      size: 219.59MB
-      sizeBytes: null
+      sha256: 0bdb32bcd5afed4e3dc794aada5be5ea15ee89ea92a22dc50e1ec97bf3137ba2
+      size: 209.4 MB
+      sizeBytes: 219590351
     files:
     - name: model.ncnn.param
     - name: tokens.txt
