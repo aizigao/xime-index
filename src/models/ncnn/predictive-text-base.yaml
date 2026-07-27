@@ -1,0 +1,38 @@
+id: predictive-text-base
+name: 智能联想模型
+description: AI 联想词预测模型
+category: prediction
+size: 47.99MB
+type: remote
+tags:
+- 联想
+- AI
+- NCNN
+appVersion: '>=2.6.0'
+currentVersion: v1.0
+versions:
+- version: v1.0
+  date: '2026-06-01'
+  changelog: 初始版本
+  storageDir: ''
+  files:
+  - name: model-int8.param
+    url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/model-int8.param
+    sha256: 
+    size: 137.8 KB
+    sizeBytes: 141139
+  - name: model-int8.bin
+    url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/model-int8.bin
+    sha256: 
+    size: 47.99MB
+    sizeBytes: 47990000
+  - name: vocab.json
+    url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/vocab.json
+    sha256: 
+    size: 141.14KB
+    sizeBytes: 141139
+  - name: vocab.txt
+    url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/vocab.txt
+    sha256: 
+    size: 46.23KB
+    sizeBytes: 47344
