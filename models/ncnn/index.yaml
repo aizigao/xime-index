@@ -1,8 +1,46 @@
 # Xime NCNN 模型子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-07-26'
+updated_at: '2026-07-27'
 models:
+- id: predictive-text-base
+  name: 智能联想模型
+  description: AI 联想词预测模型
+  category: prediction
+  size: 46.0 MB
+  type: remote
+  tags:
+  - 联想
+  - AI
+  - NCNN
+  appVersion: '>=2.6.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-06-01'
+    changelog: 初始版本
+    storageDir: ''
+    files:
+    - name: model-int8.param
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/model-int8.param
+      sha256: 6bb522d24ca184d2b7beea60ae97357dad75f3cc9b6747d1185f7bea75d4dc3e
+      size: 19.0 KB
+      sizeBytes: 19466
+    - name: model-int8.bin
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/model-int8.bin
+      sha256: 72b644e1ba6722681517189303076d867138a8a0e40ea92d37c794816c0119de
+      size: 45.8 MB
+      sizeBytes: 47993132
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/vocab.json
+      sha256: 3f7a6aa773afe6dacf75701f7861257d36a46a26ac70c0f8ee6dd4032cc3b9c2
+      size: 137.8 KB
+      sizeBytes: 141139
+    - name: vocab.txt
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/ncnn/vocab.txt
+      sha256: eb5d4d16c0e937bff0352948102930e7b7f1962fa7fcd0f7c0a741764f3db390
+      size: 45.1 KB
+      sizeBytes: 46229
 - id: sense-voice
   name: SenseVoice 语音转文字
   description: SenseVoice 专注于高精度多语言语音识别、情感辨识和音频事件检测。
