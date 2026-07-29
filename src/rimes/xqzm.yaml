@@ -1,0 +1,21 @@
+id: xqzm
+name: 风入松郑码方案
+author: 风入松
+description: 该方案包括三个方案：小泉郑码、小泉简郑、小泉拼音。
+type: remote
+tags:
+- 郑码
+- 拼音
+- 简繁
+homepage: https://github.com/hzqim/xqzm
+dependencies: []
+appVersion: '>=2.3.0'
+currentVersion: zm-6.4.2
+versions:
+- version: zm-6.4.2
+  date: '2026-07-29'
+  changelog: ''
+  downloadUrl:
+  - url: https://github.com/hzqim/xqzm/archive/refs/tags/zm-6.4.2.tar.gz
+    sha256: ''
+    size: 899KB
