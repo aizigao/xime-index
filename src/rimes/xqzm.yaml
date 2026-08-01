@@ -9,7 +9,7 @@ tags:
 - 简繁
 homepage: https://github.com/hzqim/xqzm
 dependencies: []
-appVersion: '>=2.3.0'
+appVersion: '>=2.6.0'
 currentVersion: zm-6.4.2
 versions:
 - version: zm-6.4.2

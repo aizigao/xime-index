@@ -1,7 +1,7 @@
 # Xime 输入方案子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-07-27'
+updated_at: '2026-07-30'
 schemas:
 - id: cangjie
   name: 倉頡輸入法
@@ -209,6 +209,28 @@ schemas:
       sha256: 7d105524b81373c7fef0cbfd197fa3c236bcb4264b1935c5e384bacb10fece53
       size: 902.9 KB
       sizeBytes: 924526
+- id: xqzm
+  name: 风入松郑码方案
+  author: 风入松
+  description: 该方案包括三个方案：小泉郑码、小泉简郑、小泉拼音。
+  type: remote
+  tags:
+  - 郑码
+  - 拼音
+  - 简繁
+  homepage: https://github.com/hzqim/xqzm
+  dependencies: []
+  appVersion: '>=2.6.0'
+  currentVersion: zm-6.4.2
+  versions:
+  - version: zm-6.4.2
+    date: '2026-07-29'
+    changelog: ''
+    downloadUrl:
+    - url: https://github.com/hzqim/xqzm/archive/refs/tags/zm-6.4.2.tar.gz
+      sha256: 5cea73cf5625fd03234e8af97d7224afc8397d8b52ec01e2d1ac377be4fc2b00
+      size: 7.6 MB
+      sizeBytes: 7988200
 - id: zhengma
   name: 郑码方案
   author: chen32768
