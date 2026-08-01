@@ -1,7 +1,7 @@
 # Xime 模型子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-07-30'
+updated_at: '2026-08-01'
 models:
 - id: ochwpro
   name: 手写模型
@@ -30,8 +30,36 @@ models:
       sha256: 171cf2ac23731428ac9dd28f64be82dece5f66a0ca3d674ffb3b567b51532176
       size: 50.1 KB
       sizeBytes: 51317
+- id: predictive-text-base
+  name: 智能联想模型 base 版本
+  description: 基于 ONNX 的 AI 联想词预测模型，int8 量化，相比 small 版本，模型更大，预测更准确
+  category: prediction
+  size: 34.8 MB
+  type: remote
+  tags:
+  - 联想
+  - AI
+  - ONNX
+  appVersion: '>=2.6.0'
+  currentVersion: v1.0
+  versions:
+  - version: v1.0
+    date: '2026-08-01'
+    changelog: 初始版本
+    storageDir: ''
+    files:
+    - name: vocab.json
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/onnx/vocab.json
+      sha256: 3f7a6aa773afe6dacf75701f7861257d36a46a26ac70c0f8ee6dd4032cc3b9c2
+      size: 137.8 KB
+      sizeBytes: 141139
+    - name: model_int8_dynamic.onnx
+      url: https://www.modelscope.cn/models/bikeand/predictive-text-base/resolve/master/onnx/model_int8_dynamic.onnx
+      sha256: e15009c84d9702056ba8b5f6c04b27ae7d0400167647a5e94cb699f24f885a9d
+      size: 34.7 MB
+      sizeBytes: 36353598
 - id: predictive-text-small
-  name: 智能联想模型
+  name: 智能联想模型 small 版本
   description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
   category: prediction
   size: 18.9 MB
