@@ -1,0 +1,21 @@
+id: com.kingzcheung.xime.plugin.funasr_asr
+name: 阿里百炼 FunAsr
+author: Xime
+description: 阿里百炼 FunAsr 在线语音识别
+type: remote
+tags:
+- 语音
+- ASR
+pluginType: speech
+homepage: https://github.com/ximeiorg/Xime
+license: GPL-3.0
+appVersion: '>=2.6.0'
+currentVersion: 1.1.0
+versions:
+- version: 1.1.0
+  date: '2026-08-07'
+  changelog: 初始发布，Lua 插件化实现
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/nightly/funasr-asr-1.1.0.xipk
+    sha256: 0afbc060f3a055c7cc5f9a9c2a58ab81633048bb60cfa71a922b4e90cbce69b5
+    size: 10.1 KB

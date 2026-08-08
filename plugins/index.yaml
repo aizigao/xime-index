@@ -1,47 +1,89 @@
 # Xime 插件子索引
-# ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
+# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-08-01'
+updated_at: '2026-08-08'
 plugins:
-- id: xime.kaomoji
-  name: 颜文字
+- id: com.kingzcheung.xime.plugin.funasr_asr
+  name: 阿里百炼 FunAsr
   author: Xime
-  description: 丰富的颜文字表情集，(◕‿◕✿) 让输入更有趣
+  description: 阿里百炼 FunAsr 在线语音识别
   type: remote
   tags:
-  - 颜文字
+  - 语音
+  - ASR
+  pluginType: speech
+  homepage: https://github.com/ximeiorg/Xime
+  license: GPL-3.0
+  appVersion: '>=2.6.0'
+  currentVersion: 1.1.0
+  versions:
+  - version: 1.1.0
+    date: '2026-08-07'
+    changelog: 初始发布，Lua 插件化实现
+    downloadUrl:
+    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/funasr-asr-1.1.0.xipk
+      sha256: 0afbc060f3a055c7cc5f9a9c2a58ab81633048bb60cfa71a922b4e90cbce69b5
+      size: 10.1 KB
+- id: com.kingzcheung.xime.plugin.kaomoji
+  name: 颜文字表情包
+  author: Xime
+  description: 包含 174 个常用颜文字的表情插件
+  type: remote
+  tags:
   - 表情
+  - 颜文字
   pluginType: emoji
   homepage: https://github.com/ximeiorg/Xime
   license: GPL-3.0
-  appVersion: '>=2.0.0'
-  currentVersion: 2.0.0
+  appVersion: '>=2.6.0'
+  currentVersion: 2.1.0
   versions:
-  - version: 2.0.0
-    date: '2026-03-01'
-    changelog: 新增更多颜文字分类
+  - version: 2.1.0
+    date: '2026-08-07'
+    changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/kaomoji-2.0.0-signed.apk
-      sha256: 243f0c4f5454c775b6056ac7c3beff08e44a4f75f7216c468a399aa949c5cd99
-      size: 2.08 MB
-- id: xime.meme-bunny
-  name: 表情兔
+    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/kaomoji-2.1.0.xipk
+      sha256: 541a6964c037d9a279ee0971d2b24b438722ef717edacebccdfd06098bdb1fa4
+      size: 3.22 KB
+- id: com.kingzcheung.xime.plugin.meme_bunny
+  name: 恶搞兔表情包
   author: Xime
-  description: 可爱的表情包贴纸合集
+  description: 恶搞兔表情包（6 个表情图片）
   type: remote
   tags:
-  - 表情包
+  - 表情
   - 贴纸
   pluginType: emoji
   homepage: https://github.com/ximeiorg/Xime
   license: GPL-3.0
-  appVersion: '>=2.0.0'
-  currentVersion: 2.0.0
+  appVersion: '>=2.6.0'
+  currentVersion: 2.1.0
   versions:
-  - version: 2.0.0
-    date: '2026-03-01'
-    changelog: 新增更多表情贴纸
+  - version: 2.1.0
+    date: '2026-08-07'
+    changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.3.0-beta5/meme-bunny-2.0.0-signed.apk
-      sha256: 283c8491d1878fef5fc4594a7ca19e225d90fe08786bed50db04e2452a84e499
-      size: 12.7 MB
+    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/meme-bunny-2.1.0.xipk
+      sha256: 200a628e0b1a667708e6e7430e185cea61ef6982c0b913222736c73e13a6c31e
+      size: 64.9 KB
+- id: com.kingzcheung.xime.plugin.volc_asr
+  name: 火山引擎流式语音识别
+  author: Xime
+  description: 火山方舟在线语音识别
+  type: remote
+  tags:
+  - 语音
+  - ASR
+  pluginType: speech
+  homepage: https://github.com/ximeiorg/Xime
+  license: GPL-3.0
+  appVersion: '>=2.6.0'
+  currentVersion: 1.0.0
+  versions:
+  - version: 1.0.0
+    date: '2026-08-07'
+    changelog: 初始发布，Lua 插件化实现
+    downloadUrl:
+    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/volc-asr-1.0.0.xipk
+      sha256: d54513ab029890e0848d157ee710a2c0754d43c7e31ff6688b22157ad01d4d15
+      size: 10.5 KB

@@ -1,0 +1,21 @@
+id: com.kingzcheung.xime.plugin.kaomoji
+name: 颜文字表情包
+author: Xime
+description: 包含 174 个常用颜文字的表情插件
+type: remote
+tags:
+- 表情
+- 颜文字
+pluginType: emoji
+homepage: https://github.com/ximeiorg/Xime
+license: GPL-3.0
+appVersion: '>=2.6.0'
+currentVersion: 2.1.0
+versions:
+- version: 2.1.0
+  date: '2026-08-07'
+  changelog: 初始发布，Lua 插件化实现
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/nightly/kaomoji-2.1.0.xipk
+    sha256: 541a6964c037d9a279ee0971d2b24b438722ef717edacebccdfd06098bdb1fa4
+    size: 3.22 KB
