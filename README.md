@@ -6,17 +6,18 @@ Xime 输入法的插件与方案市场索引。
 
 ```
 ├── index.yaml                 # 市场主索引（引用子索引）
-├── rimes/                     # 输入方案源文件
-│   ├── index.yaml             #   方案子索引（自动生成）
-│   ├── rime-ice.yaml          #   各方案独立配置
-│   └── ...
-├── plugins/                   # 插件源文件
-│   ├── index.yaml             #   插件子索引（自动生成）
-│   ├── xime.kaomoji.yaml
-│   └── ...
-├── models/                    # 模型源文件
-│   ├── index.yaml             #   模型子索引（自动生成）
-│   └── ...
+├── src/                       # 源文件（每个条目一个 YAML）
+│   ├── rimes/                 #   输入方案源文件
+│   ├── plugins/               #   插件源文件
+│   └── models/                #   模型源文件
+│       └── ncnn/              #     NCNN 模型源文件
+├── rimes/                     # 方案子索引（自动生成）
+│   └── index.yaml
+├── plugins/                   # 插件子索引（自动生成）
+│   └── index.yaml
+├── models/                    # 模型子索引（自动生成）
+│   ├── index.yaml
+│   └── ncnn/index.yaml
 ├── scripts/
 │   ├── ci-update.py           #   CI 自动补全 sha256/size
 │   ├── lib.py                 #   共享工具库
@@ -29,12 +30,17 @@ Xime 输入法的插件与方案市场索引。
 
 ### 模型 (Models)
 
-| ID | 名称 | 分类 | 大小 | 最低 App 版本 |
-|---|---|---|---|---|
-| `ochwpro` | 手写模型 | handwriting | 6.7 MB | >=2.5.0 |
-| `predictive-text-small` | 智能联想模型 | prediction | 18.9 MB | >=2.3.0 |
-| `punctuation_int8` | 标点预测模型 int8 | punctuation | 2.3 MB | >=2.3.0 |
-| `zipformer-zh-int8` | 中文 Zipformer int8 | asr | 126.5 MB | >=2.3.0 |
+| ID | 名称 | 作者 | 分类 | 大小 | 最低 App 版本 |
+|---|---|---|---|---|---|
+| `ochwpro` | 手写模型 | bikeand | handwriting | 6.7 MB | >=2.5.0 |
+| `predictive-text-base` | 智能联想模型 base 版本 | bikeand | prediction | 34.8 MB | >=2.6.0 |
+| `predictive-text-small` | 智能联想模型 small 版本 | bikeand | prediction | 18.9 MB | >=2.3.0 |
+| `punctuation_int8` | 标点预测模型 int8 | bikeand | punctuation | 2.3 MB | >=2.3.0 |
+| `zipformer-zh-int8` | 中文 Zipformer int8 | bikeand | asr | 132.6 MB | <2.6.0 |
+| `predictive-text-base` (NCNN) | 智能联想模型 | bikeand | prediction | 46.0 MB | >=2.6.0 |
+| `sense-voice` (NCNN) | SenseVoice 语音转文字 | bikeand | asr | 209.4 MB | >=2.6.0 |
+
+> NCNN 模型为移动端本地推理格式，子索引见 `models/ncnn/index.yaml`。
 
 ### 插件 (Plugins)
 

@@ -1,5 +1,6 @@
 id: predictive-text-small
 name: 智能联想模型 small 版本
+author: kingzcheung
 description: 基于 ONNX 的 AI 联想词预测模型，int8 量化
 category: prediction
 size: 18.8 MB
@@ -8,6 +9,7 @@ tags:
 - 联想
 - AI
 - ONNX
+homepage: https://github.com/ximeiorg/predictive-text
 appVersion: '>=2.3.0'
 currentVersion: v1.0
 versions:

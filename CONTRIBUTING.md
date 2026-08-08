@@ -108,6 +108,8 @@ python scripts/generate_index.py
 # models/my-model.yaml
 id: "my-model"                      # 模型唯一 ID
 name: "我的模型"                     # 显示名称
+author: "你的名字"                   # 作者
+homepage: "https://..."             # 项目主页（可选）
 description: "模型说明"               # 简短描述
 category: "prediction"              # 分类：prediction / asr / punctuation / stroke / other
 size: "30 MB"                       # 模型大小描述
@@ -137,6 +139,8 @@ versions:
 # models/my-asr-model.yaml
 id: "my-asr-model"
 name: "语音识别模型"
+author: "你的名字"                   # 作者
+homepage: "https://..."             # 项目主页（可选）
 description: "基于 sherpa-onnx 的语音识别模型"
 category: "asr"
 size: "36 MB"

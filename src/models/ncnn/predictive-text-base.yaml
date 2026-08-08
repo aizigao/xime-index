@@ -1,5 +1,6 @@
 id: predictive-text-base
 name: 智能联想模型
+author: bikeand
 description: AI 联想词预测模型
 category: prediction
 size: 47.99MB
@@ -8,6 +9,7 @@ tags:
 - 联想
 - AI
 - NCNN
+homepage: https://www.modelscope.cn/models/bikeand/predictive-text-base
 appVersion: '>=2.6.0'
 currentVersion: v1.0
 versions:

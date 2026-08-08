@@ -36,8 +36,8 @@ PLUGIN_FIELDS = [
 ]
 
 MODEL_FIELDS = [
-    "id", "name", "description", "category", "size",
-    "type", "tags", "appVersion", "warning",
+    "id", "name", "author", "description", "category", "size",
+    "type", "tags", "homepage", "license", "appVersion", "warning",
     "currentVersion", "versions",
 ]
 

@@ -1,12 +1,14 @@
 id: ochwpro
 name: 手写模型
-description: 基于 ONNX 的手写文字识别模型
+author: kingzcheung
+description: 基于 Transformer 的手写文字识别模型
 category: handwriting
 size: 7.00 MB
 type: remote
 tags:
 - 手写
 - ONNX
+homepage: https://github.com/ximeiorg/ochwpro
 appVersion: '>=2.5.0'
 currentVersion: v1.0
 versions:
