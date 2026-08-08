@@ -88,7 +88,7 @@ models:
       sizeBytes: 19720256
 - id: punctuation_int8
   name: 标点预测模型 int8
-  description: 基于 Transformer 的中文标点预测模型，int8 量化
+  description: 基于 Transformer 的中文标点预测模型,自2.6.0 版本起废弃。
   category: punctuation
   size: 2.3 MB
   type: remote
@@ -116,7 +116,7 @@ models:
       sizeBytes: 119104
 - id: zipformer-zh-int8
   name: 中文 Zipformer int8
-  description: Zipformer 架构实时语音识别模型，int8 量化
+  description: 本地语音识别模型，自2.6.0 版本起废弃。
   category: asr
   size: 132.63MB
   type: remote
@@ -124,7 +124,7 @@ models:
   - 语音
   - sherpa-onnx
   - ASR
-  appVersion: '>=2.3.0'
+  appVersion: <2.6.0
   currentVersion: v1.0
   versions:
   - version: v1.0
