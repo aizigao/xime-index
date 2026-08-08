@@ -5,6 +5,7 @@ updated_at: '2026-08-08'
 models:
 - id: predictive-text-base
   name: 智能联想模型
+  author: bikeand
   description: AI 联想词预测模型
   category: prediction
   size: 46.0 MB
@@ -13,6 +14,7 @@ models:
   - 联想
   - AI
   - NCNN
+  homepage: https://www.modelscope.cn/models/bikeand/predictive-text-base
   appVersion: '>=2.6.0'
   currentVersion: v1.0
   versions:
@@ -43,6 +45,7 @@ models:
       sizeBytes: 46229
 - id: sense-voice
   name: SenseVoice 语音转文字
+  author: bikeand
   description: SenseVoice 专注于高精度多语言语音识别、情感辨识和音频事件检测。
   category: asr
   size: 219.59MB
@@ -51,6 +54,7 @@ models:
   - 语音
   - sherpa-ncnn
   - ASR
+  homepage: https://www.modelscope.cn/models/bikeand/asr-ncnn-from-sherpa
   appVersion: '>=2.6.0'
   currentVersion: v1.0
   versions:
