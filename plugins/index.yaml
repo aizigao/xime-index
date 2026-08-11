@@ -1,7 +1,7 @@
 # Xime 插件子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-08-08'
+updated_at: '2026-08-11'
 plugins:
 - id: com.kingzcheung.xime.plugin.funasr_asr
   name: 阿里百炼 FunAsr
@@ -21,8 +21,8 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/funasr-asr-1.1.0.xipk
-      sha256: 0afbc060f3a055c7cc5f9a9c2a58ab81633048bb60cfa71a922b4e90cbce69b5
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/funasr-asr-1.1.0.xipk
+      sha256: a6b76f917126e463f1ee5cf228587e4bc0cce946ea6ffef338f47d672bd2b3c1
       size: 10.1 KB
 - id: com.kingzcheung.xime.plugin.kaomoji
   name: 颜文字表情包
@@ -42,8 +42,8 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/kaomoji-2.1.0.xipk
-      sha256: 541a6964c037d9a279ee0971d2b24b438722ef717edacebccdfd06098bdb1fa4
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/kaomoji-2.1.0.xipk
+      sha256: 03ed3c62a59613ebd5f7feb760aae20ff8eaae1d28beed042a11945f7756acce
       size: 3.22 KB
 - id: com.kingzcheung.xime.plugin.meme_bunny
   name: 恶搞兔表情包
@@ -63,8 +63,8 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/meme-bunny-2.1.0.xipk
-      sha256: 200a628e0b1a667708e6e7430e185cea61ef6982c0b913222736c73e13a6c31e
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/meme-bunny-2.1.0.xipk
+      sha256: 9fb7843bf797bc73afa525501276166b91d38d53c783487ac4e39b49b321cd03
       size: 64.9 KB
 - id: com.kingzcheung.xime.plugin.volc_asr
   name: 火山引擎流式语音识别
@@ -84,6 +84,6 @@ plugins:
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/nightly/volc-asr-1.0.0.xipk
-      sha256: d54513ab029890e0848d157ee710a2c0754d43c7e31ff6688b22157ad01d4d15
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/volc-asr-1.0.0.xipk
+      sha256: 82acb53c780580dcd7e9b3d481bdb5a93c8253857d5e0b1c98760ff643e5c48a
       size: 10.5 KB
