@@ -16,6 +16,6 @@ versions:
   date: '2026-08-07'
   changelog: 初始发布，Lua 插件化实现
   downloadUrl:
-  - url: https://github.com/ximeiorg/Xime/releases/download/nightly/kaomoji-2.1.0.xipk
-    sha256: 541a6964c037d9a279ee0971d2b24b438722ef717edacebccdfd06098bdb1fa4
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/kaomoji-2.1.0.xipk
+    sha256: 03ed3c62a59613ebd5f7feb760aae20ff8eaae1d28beed042a11945f7756acce
     size: 3.22 KB
