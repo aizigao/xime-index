@@ -1,0 +1,20 @@
+id: com.kingzcheung.xime.plugin.ximed_sync
+name: ximed 剪贴板同步
+author: Xime
+description: 对接 ximed HTTP 接口的双向剪贴板同步（文本）
+type: remote
+tags:
+- 剪贴板
+- 同步
+pluginType: clipboard_sync
+homepage: https://github.com/ximeiorg/Xime
+license: GPL-3.0
+appVersion: '>=2.6.0'
+currentVersion: 0.1.0
+versions:
+- version: 0.1.0
+  date: '2026-08-12'
+  changelog: 初始发布，Lua 插件化实现
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/ximed-clipboard-sync-0.1.0.xipk
+    size: 3.01 KB

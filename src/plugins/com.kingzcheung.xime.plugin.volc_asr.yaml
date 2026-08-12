@@ -10,12 +10,18 @@ pluginType: speech
 homepage: https://github.com/ximeiorg/Xime
 license: GPL-3.0
 appVersion: '>=2.6.0'
-currentVersion: 1.0.0
+currentVersion: 1.0.1
 versions:
+- version: 1.0.1
+  date: '2026-08-12'
+  changelog: 优化了实现，修复部分 bug
+  downloadUrl:
+  - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/volc-asr-1.0.1.xipk
+    size: 10.5 KB
 - version: 1.0.0
   date: '2026-08-07'
   changelog: 初始发布，Lua 插件化实现
   downloadUrl:
   - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/volc-asr-1.0.0.xipk
-    sha256: 82acb53c780580dcd7e9b3d481bdb5a93c8253857d5e0b1c98760ff643e5c48a
     size: 10.5 KB
+
