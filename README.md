@@ -10,14 +10,12 @@ Xime 输入法的插件与方案市场索引。
 │   ├── rimes/                 #   输入方案源文件
 │   ├── plugins/               #   插件源文件
 │   └── models/                #   模型源文件
-│       └── ncnn/              #     NCNN 模型源文件
 ├── rimes/                     # 方案子索引（自动生成）
 │   └── index.yaml
 ├── plugins/                   # 插件子索引（自动生成）
 │   └── index.yaml
 ├── models/                    # 模型子索引（自动生成）
-│   ├── index.yaml
-│   └── ncnn/index.yaml
+│   └── index.yaml
 ├── scripts/
 │   ├── ci-update.py           #   CI 自动补全 sha256/size
 │   ├── lib.py                 #   共享工具库
@@ -37,17 +35,17 @@ Xime 输入法的插件与方案市场索引。
 | `predictive-text-small` | 智能联想模型 small 版本 | bikeand | prediction | 18.9 MB | >=2.3.0 |
 | `punctuation_int8` | 标点预测模型 int8 | bikeand | punctuation | 2.3 MB | >=2.3.0 |
 | `zipformer-zh-int8` | 中文 Zipformer int8 | bikeand | asr | 132.6 MB | <2.6.0 |
-| `predictive-text-base` (NCNN) | 智能联想模型 | bikeand | prediction | 46.0 MB | >=2.6.0 |
-| `sense-voice` (NCNN) | SenseVoice 语音转文字 | bikeand | asr | 209.4 MB | >=2.6.0 |
-
-> NCNN 模型为移动端本地推理格式，子索引见 `models/ncnn/index.yaml`。
 
 ### 插件 (Plugins)
 
 | ID | 名称 | 作者 | 类型 | 大小 | 最低 App 版本 |
 |---|---|---|---|---|---|
-| `xime.kaomoji` | 颜文字 | Xime | emoji | 2.08 MB | >=2.0.0 |
-| `xime.meme-bunny` | 表情兔 | Xime | emoji | 12.7 MB | >=2.0.0 |
+| `com.kingzcheung.xime.plugin.funasr_asr` | 阿里百炼 FunAsr | Xime | speech | 10.2 KB | >=2.6.0 |
+| `com.kingzcheung.xime.plugin.kaomoji` | 颜文字表情包 | Xime | emoji | 3.22 KB | >=2.6.0 |
+| `com.kingzcheung.xime.plugin.meme_bunny` | 恶搞兔表情包 | Xime | emoji | 65 KB | >=2.6.0 |
+| `com.kingzcheung.xime.plugin.volc_asr` | 火山引擎流式语音识别 | Xime | speech | 10.6 KB | >=2.6.0 |
+| `com.kingzcheung.xime.plugin.webdav_clipboard_sync` | WebDAV 剪贴板同步 | Xime | clipboard_sync | 4.52 KB | >=2.6.0 |
+| `com.kingzcheung.xime.plugin.ximed_sync` | ximed 剪贴板同步 | Xime | clipboard_sync | 3.01 KB | >=2.6.0 |
 
 ### 输入方案 (Rimes)
 

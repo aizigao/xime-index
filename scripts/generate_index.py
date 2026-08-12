@@ -104,10 +104,6 @@ HEADERS = {
         "# Xime 模型子索引\n"
         "# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑\n"
     ),
-    "models/ncnn": (
-        "# Xime NCNN 模型子索引\n"
-        "# ⚠️ 此文件由 scripts/generate_index.py 自动生成，请勿手动编辑\n"
-    ),
 }
 
 
@@ -217,7 +213,7 @@ def main():
     check_only = "--check" in args
     validate_only = "--validate" in args
 
-    SUBDIRS = ("rimes", "plugins", "models", "models/ncnn")
+    SUBDIRS = ("rimes", "plugins", "models")
 
     # 暂存当前内容（用于 check 模式）
     snapshots = {}
@@ -232,14 +228,12 @@ def main():
     generate_index("rimes", "schemas", SCHEMA_FIELDS)
     generate_index("plugins", "plugins", PLUGIN_FIELDS)
     generate_index("models", "models", MODEL_FIELDS)
-    generate_index("models/ncnn", "models", MODEL_FIELDS, "models/ncnn")
 
     # 校验（生成后自动校验）
     print("Validating generated index files...")
     validate_index("rimes", "schemas")
     validate_index("plugins", "plugins")
     validate_model_index("models", "models")
-    validate_model_index("models/ncnn", "models")
 
     # check 模式：检测是否有变动
     if check_only:
@@ -266,7 +260,6 @@ def main():
     print("   - rimes/index.yaml")
     print("   - plugins/index.yaml")
     print("   - models/index.yaml")
-    print("   - models/ncnn/index.yaml")
 
 
 if __name__ == "__main__":
