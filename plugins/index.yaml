@@ -1,7 +1,7 @@
 # Xime 插件子索引
 # ⚠️ 此文件由 scripts/ci-update.py 自动生成，请勿手动编辑
 index_version: 1
-updated_at: '2026-08-11'
+updated_at: '2026-08-12'
 plugins:
 - id: com.kingzcheung.xime.plugin.funasr_asr
   name: 阿里百炼 FunAsr
@@ -22,8 +22,9 @@ plugins:
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
     - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/funasr-asr-1.1.0.xipk
-      sha256: a6b76f917126e463f1ee5cf228587e4bc0cce946ea6ffef338f47d672bd2b3c1
-      size: 10.1 KB
+      size: 10.2 KB
+      sha256: b8109d1065b5f0f886290f2eb17014297711af1273499ee2a5c03d38fa3caf4a
+      sizeBytes: 10437
 - id: com.kingzcheung.xime.plugin.kaomoji
   name: 颜文字表情包
   author: Xime
@@ -43,8 +44,9 @@ plugins:
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
     - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/kaomoji-2.1.0.xipk
-      sha256: 03ed3c62a59613ebd5f7feb760aae20ff8eaae1d28beed042a11945f7756acce
-      size: 3.22 KB
+      size: 3.2 KB
+      sha256: 0c57f43e71ce05449cd69ef7959d03d309034c9234fcd02225fbb7e320bc70da
+      sizeBytes: 3297
 - id: com.kingzcheung.xime.plugin.meme_bunny
   name: 恶搞兔表情包
   author: Xime
@@ -64,8 +66,9 @@ plugins:
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
     - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/meme-bunny-2.1.0.xipk
-      sha256: 9fb7843bf797bc73afa525501276166b91d38d53c783487ac4e39b49b321cd03
-      size: 64.9 KB
+      size: 65.0 KB
+      sha256: f4e3173533d173b76819145c821fd617e3ca3551a546863fd20d86291e9aa359
+      sizeBytes: 66567
 - id: com.kingzcheung.xime.plugin.volc_asr
   name: 火山引擎流式语音识别
   author: Xime
@@ -78,12 +81,65 @@ plugins:
   homepage: https://github.com/ximeiorg/Xime
   license: GPL-3.0
   appVersion: '>=2.6.0'
-  currentVersion: 1.0.0
+  currentVersion: 1.0.1
   versions:
+  - version: 1.0.1
+    date: '2026-08-12'
+    changelog: 优化了实现，修复部分 bug
+    downloadUrl:
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/volc-asr-1.0.1.xipk
+      size: 10.6 KB
+      sha256: bc5df6bc159ab4f95f229b0448c21ceb42e95ef017a7695952a0aa8711501ed7
+      sizeBytes: 10859
   - version: 1.0.0
     date: '2026-08-07'
     changelog: 初始发布，Lua 插件化实现
     downloadUrl:
-    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/volc-asr-1.0.0.xipk
-      sha256: 82acb53c780580dcd7e9b3d481bdb5a93c8253857d5e0b1c98760ff643e5c48a
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta4/volc-asr-1.0.0.xipk
       size: 10.5 KB
+      sha256: 82acb53c780580dcd7e9b3d481bdb5a93c8253857d5e0b1c98760ff643e5c48a
+      sizeBytes: 10757
+- id: com.kingzcheung.xime.plugin.webdav_clipboard_sync
+  name: WebDAV 剪贴板同步
+  author: Xime
+  description: 通过 WebDAV 文件同步剪贴板（文本，多设备）
+  type: remote
+  tags:
+  - 剪贴板
+  - 同步
+  pluginType: clipboard_sync
+  homepage: https://github.com/ximeiorg/Xime
+  license: GPL-3.0
+  appVersion: '>=2.6.0'
+  currentVersion: 0.1.0
+  versions:
+  - version: 0.1.0
+    date: '2026-08-12'
+    changelog: 初始发布，Lua 插件化实现
+    downloadUrl:
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/webdav-clipboard-sync-0.1.0.xipk
+      size: 4.5 KB
+      sha256: 8ffae09bd99924f5f55b9b8339c2900ba7c7d997836327697824ee0a970786c5
+      sizeBytes: 4625
+- id: com.kingzcheung.xime.plugin.ximed_sync
+  name: ximed 剪贴板同步
+  author: Xime
+  description: 对接 ximed HTTP 接口的双向剪贴板同步（文本）
+  type: remote
+  tags:
+  - 剪贴板
+  - 同步
+  pluginType: clipboard_sync
+  homepage: https://github.com/ximeiorg/Xime
+  license: GPL-3.0
+  appVersion: '>=2.6.0'
+  currentVersion: 0.1.0
+  versions:
+  - version: 0.1.0
+    date: '2026-08-12'
+    changelog: 初始发布，Lua 插件化实现
+    downloadUrl:
+    - url: https://github.com/ximeiorg/Xime/releases/download/v2.6.0-beta5/ximed-clipboard-sync-0.1.0.xipk
+      size: 3.0 KB
+      sha256: b3cc88fac1c33c20dd18ce2268ce52d470cc3fdd70ea730d51f2f64f31d92a69
+      sizeBytes: 3079
