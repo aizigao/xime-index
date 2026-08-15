@@ -1,0 +1,20 @@
+id: com.kingzcheung.xime_fluent_emoji
+name: Fluent Emoji 3D
+author: Xime
+description: Microsoft Fluent UI 3D 风格表情（222 个精选），涵盖笑脸、人物、动物、食物、旅行、活动、物品、符号、旗帜 9 大分类
+type: remote
+tags:
+- 表情
+- 3D
+pluginType: emoji
+homepage: https://github.com/ximeiorg/xime-fluent-emoji
+license: MIT
+appVersion: '>=2.6.0-beta7'
+currentVersion: 2.0.0
+versions:
+- version: 2.0.0
+  date: '2026-08-16'
+  changelog: 初始发布，Lua 插件化实现
+  downloadUrl:
+  - url: https://github.com/ximeiorg/xime-fluent-emoji/releases/download/v2.0.0/xime-fluent-emoji-2.0.0.xipk
+    sha256: c3dea0d314b481df5565fa7ce95255d8d9036a0172b92d48561bf51dda35e3a5
