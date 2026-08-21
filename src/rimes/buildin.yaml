@@ -1,5 +1,5 @@
-id: wubi86
-name: 五笔86
+id: buildin
+name: 默认方案
 author: 王永民
 description: 五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。
 type: built-in
