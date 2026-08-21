@@ -3,7 +3,7 @@
 index_version: 1
 updated_at: '2026-08-21'
 schemas:
-- id: buildin
+- id: builtin
   name: 默认方案
   author: 王永民
   description: 五笔字形 86 版，经典五笔输入方案,包括了拼音相关功能。
