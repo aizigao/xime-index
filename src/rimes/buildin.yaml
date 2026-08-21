@@ -8,7 +8,7 @@ tags:
 - 拼音
 homepage: https://github.com/kingzcheung/rime-wubi
 appVersion: '>=2.6.0'
-currentVersion: 2.0.1
+currentVersion: 2.1.2
 versions:
 - version: 2.1.2
   date: '2026-08-01'
